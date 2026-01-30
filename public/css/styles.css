@@ -3065,8 +3065,9 @@ input::-moz-focus-inner {
     width: 100%;
     height: 8.8rem;
     position: absolute;
-    top: var(--vspace-0_75);
+    top: 0;
     left: 0;
+    background-color:#56585a74;
 }
 
 .s-header.offset {
@@ -3123,7 +3124,7 @@ input::-moz-focus-inner {
     transition: all .5s;
     position: absolute;
     left: 8rem;
-    top: calc(50% - 2px);
+    top: calc(59%);
 }
 
 .s-header__logo a {
@@ -3522,6 +3523,7 @@ input::-moz-focus-inner {
     position: relative;
     left: -10vw;
     bottom: 20vw;
+    top: -10em;
 }
 
 .s-hero__content h1 {
@@ -4883,14 +4885,15 @@ html.no-csstransitions .s-hero__content {
 
 .ss-go-top a {
     text-decoration: none;
+    font-size: large;
     border: 0 none;
     display: block;
     height: 6.4rem;
-    width: 6.4rem;
+    width: 13.4rem;
     line-height: 6.4rem;
     text-align: center;
-    border-radius: 50%;
-    background-color: var(--color-gray-19) !important;
+    border-radius: 10%;
+    background-color: var(--color-gray-16) !important;
     -webkit-transition: all .3s;
     transition: all .3s;
     position: relative;
