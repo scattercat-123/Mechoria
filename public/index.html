@@ -6,8 +6,8 @@
     ================================================== -->
     <meta charset="utf-8">
     <title>Mechoria | 2026</title>
-    <meta name="description" content="First Ever battlebots styled tournament in india hosted by students">
-    <meta name="author" content="MC26">
+    <meta name="description" content="India's first student-hosted BattleBots-style hackathon and tournament">
+    <meta name="author" content="Team Mechoria">
 
     <!-- mobile specific metas
     ================================================== -->
@@ -15,20 +15,11 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/vendor.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="logo.svg">
-    <link rel="icon" type="image/png" sizes="16x16" href="logo.sv">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
 
 </head>
 
@@ -52,7 +43,7 @@
 
         <div class="s-header__logo">
             <a href="index.html">
-                <img src="images/logo.png" alt="Homepage">
+                <img src="images/logo.svg" alt="Mechoria">
             </a>
         </div>
         <div class="s-header__content">
@@ -60,17 +51,18 @@
                 <ul class="s-header__nav">
                     <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
                     <li><a class="smoothscroll" href="#about" title="About">About</a></li>
-                    <li><a class="smoothscroll" href="#services" title="Services">Services</a></li>
-                    <li><a class="smoothscroll" href="#portfolio" title="Works">Works</a></li>
+                    <li><a class="smoothscroll" href="#categories" title="Categories">Categories</a></li>
+                    <li><a class="smoothscroll" href="#sponsors" title="Sponsors">Sponsors</a></li>
+                    <li><a class="smoothscroll" href="#team" title="Team">Team</a></li>
                 </ul>
             </nav> <!-- end s-header__nav-wrap -->
 
-            <a href="mailto:#0" class="btn btn--primary btn--small">
+            <a href="mailto:team@mechoria.tech" class="btn btn--primary btn--small">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path
                         d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
                 </svg>
-                Get In Touch
+                Sponsor Us
             </a>
 
         </div> <!-- end header-content -->
@@ -93,23 +85,18 @@
                 <div class="s-hero__content-about">
 
                     <p>
-                        First Hackathon-styled Battlebots Tournament hosted by students in India!
+                        India's first student-hosted, hackathon-styled BattleBots tournament.
+                        Design, build, and battle &mdash; February 2026, Bengaluru.
                     </p>
 
-                    <footer>
-                        <div class="s-hero__content-social">
-                            <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                            <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                            <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-                        </div>
-                    </footer>
+                    <div class="s-hero__cta-row">
+                        <a href="#categories" class="btn btn--stroke smoothscroll">See the Categories</a>
+                        <a href="mailto:team@mechoria.tech" class="btn btn--primary smoothscroll">Become a Sponsor</a>
+                    </div>
                 </div>
 
             </div>
         </div>
-
-
 
         <div class="s-hero__scroll">
             <a href="#about" class="s-hero__scroll-link smoothscroll">
@@ -137,18 +124,16 @@
 
             <div class="column large-6 w-900-stack s-about__intro-text">
                 <h1 class="display-1" data-aos="fade-up">
-                    Mechoria- India's first student hosted battle bot styled hackathon
+                    Bengaluru's first true BattleBots-style tournament, built by students
                 </h1>
 
                 <p class="lead" data-aos="fade-up">
-                    We are a group of passionate students united by one mission: to share our innovative ideas with the
-                    world.
-                    Driven by our love for technology and hackathons,
-                    we are proud to launch Mechoria – India’s FIRST-ever student-hosted Bot-Battle Hackathon. Our goal
-                    is to create a platform where creativity meets competition, where ideas come alive, and where the
-                    next generation of tech innovators can challenge themselves, collaborate, and shine.
-
-                    Join us as we push the boundaries of robotics, coding, and innovation, and make history together!
+                    We're a team of 8th-semester&#8211;stage students working to bring together the
+                    most passionate builders, coders, tinkerers, and tech enthusiasts from across
+                    the city and create a high-energy arena where engineering meets strategy.
+                    Mechoria challenges students in robotics, mechanics, electronics, tactics, and
+                    real-world problem-solving &mdash; it's a platform to showcase innovation,
+                    teamwork, and the future of engineering talent in Bengaluru.
                 </p>
             </div>
 
@@ -157,400 +142,435 @@
             </div>
         </div>
 
-        <div class="row block-large-1-2 block-tab-full s-about__process item-list">
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Define</h3>
-                <p>
-                    Teams should describe their bot by listing the parts used, the voltage and power source,
-                    and how it attacks or defends in battles. They should also include basic details like weight,
-                    size,materials, and any special design features that make their bot stand out in the arena.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Design</h3>
-                <p>
-                    teams are either supposed to make a BOM (bill of materials)guide,
-                    a CAD model to receive a grant based on the weight category or can
-                    just join the event with their own bots.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Build</h3>
-                <p>
-                    Teams can either opt for reciving grants or can buy their own
-                    parts and build their own robots according to the weight category
-                    they have chosen for. they will be given 2 weeks of time before the day of battle
-                    NOTE: any extra weight will lead to disqualification
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">BATTLE!</h3>
-                <p>
-                    After the 2 weeks all teams will gater at a venue where their capabilities
-                    will be put to the test by BATTLE. Yes, battle teams will battle with each other
-                    in a knocout form of Tournament where losing teams will be knocked OUT of the battle
-                    and winning teams will procede to furthur rounds.
-                </p>
-            </div>
-        </div>
-
     </section> <!-- end s-about -->
 
 
-    <!-- services
+    <!-- event structure
     ================================================== -->
-    <section id="services" class="s-services">
+    <section id="structure" class="s-structure">
 
         <div class="row">
             <div class="column large-12">
                 <div class="section-title" data-num="02" data-aos="fade-up">
-                    <h3 class="h6">Our Expertise</h3>
+                    <h3 class="h6">How It Works</h3>
                 </div>
             </div>
             <div class="column large-6 w-900-stack">
                 <h1 class="display-1" data-aos="fade-up">
-                    Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
-                    Quis dolores totam voluptatibus.
+                    Three stages, from first sketch to final battle
                 </h1>
             </div>
             <div class="column large-6 w-900-stack">
                 <p class="lead" data-aos="fade-up">
-                    Velit deleniti harum sit beatae sint repellendus expedita. Omnis possimus
-                    sed rerum tenetur ea ab aut minima magnam. Deserunt sit cupiditate
-                    similique eveniet earum. Consectetur dolores maxime quisquam voluptate magni.
-                    Ut ex unde rem quod ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
+                    Teams design and prep online, ship their parts, then bring it all together
+                    for two days of live qualifiers, battles, and finals.
                 </p>
             </div>
         </div>
 
-        <div class="row block-large-1-2 block-tab-full s-services__services item-list">
-            <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--product-design"></span>
-                <h3 class="item-title">Product Design</h3>
-                <p>
-                    Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
-                    Quis dolores totam voluptatibus molestiae non. Quae exercitationem
-                    cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod
-                    ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-            <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--branding"></span>
-                <h3 class="item-title">Branding</h3>
-                <p>
-                    Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
-                    Quis dolores totam voluptatibus molestiae non. Quae exercitationem
-                    cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod
-                    ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-            <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--frontend"></span>
-                <h3 class="item-title">Frontend Development</h3>
-                <p>
-                    Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
-                    Quis dolores totam voluptatibus molestiae non. Quae exercitationem
-                    cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod
-                    ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-            <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--research"></span>
-                <h3 class="item-title">UX Research</h3>
-                <p>
-                    Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
-                    Quis dolores totam voluptatibus molestiae non. Quae exercitationem
-                    cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod
-                    ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-            <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--illustration"></span>
-                <h3 class="item-title">Illustration</h3>
-                <p>
-                    Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
-                    Quis dolores totam voluptatibus molestiae non. Quae exercitationem
-                    cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod
-                    ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-            <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--ecommerce"></span>
-                <h3 class="item-title">E-Commerce</h3>
-                <p>
-                    Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
-                    Quis dolores totam voluptatibus molestiae non. Quae exercitationem
-                    cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod
-                    ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-        </div>
-
-    </section> <!-- end s-services -->
-
-    <section id="portfolio" class="s-portfolio">
-
-        <div class="row s-porfolio__top">
-            <div class="column large-6 w-900-stack">
-                <div class="section-title" data-num="03" data-aos="fade-up">
-                    <h3 class="h6">Recent Works</h3>
-                </div>
-            </div>
-            <div class="column large-6 w-900-stack">
-                <h1 class="display-1" data-aos="fade-up">
-                    Here are some of our projects we done lately. Feel
-                    free to check them out.
-                </h1>
-            </div>
-        </div> <!-- end s-portfolio__top-->
-
-        <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
-
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-red-wheel.jpg"
-                            title="The Red Wheel" data-size="1050x700">
-                            <img src="images/portfolio/red-wheel.jpg"
-                                srcset="images/portfolio/red-wheel.jpg 1x, images/portfolio/red-wheel@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Branding</div>
-                        <h4 class="folio-item__title">The Red Wheel</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
-                            corrupti neque nisi.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-music-life.jpg"
-                            title="Music Life" data-size="1050x700">
-                            <img src="images/portfolio/music-life.jpg"
-                                srcset="images/portfolio/music-life.jpg 1x, images/portfolio/music-life@2x.jpg 2x"
-                                alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Frontend Design</div>
-                        <h4 class="folio-item__title">Music Life</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
-                            corrupti neque nisi.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-oi-logo.jpg" Title="OI Logo"
-                            data-size="1050x700">
-                            <img src="images/portfolio/oi-logo.jpg.jpg"
-                                srcset="images/portfolio/oi-logo.jpg 1x, images/portfolio/oi-logo@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Branding</div>
-                        <h4 class="folio-item__title">OI Logo</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
-                            corrupti neque nisi.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-corrugated-sheets.jpg"
-                            title="Corrugated Sheets" data-size="1050x700">
-                            <img src="images/portfolio/corrugated-sheets.jpg"
-                                srcset="images/portfolio/corrugated-sheets.jpg 1x, images/portfolio/corrugated-sheets@2x.jpg 2x"
-                                alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Frontend Design</div>
-                        <h4 class="folio-item__title">Corrugated Sheets</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
-                            corrupti neque nisi.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg"
-                            title="Sand Dunes" data-size="1050x700">
-                            <img src="images/portfolio/woodcraft.jpg"
-                                srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Frontend Design</div>
-                        <h4 class="folio-item__title">Wooocraft</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
-                        Project Link
-                    </a>
-                    <div class="folio-item__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
-                            corrupti neque nisi.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="The Lamp"
-                            data-size="1050x700">
-                            <img src="images/portfolio/lamp.jpg"
-                                srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Frontend Design</div>
-                        <h4 class="folio-item__title">The Lamp</h4>
-                    </div>
-                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
-                            corrupti neque nisi.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-
-        </div> <!-- folio-list -->
-
-    </section> <!-- end s-portfolio -->
-
-
-    <!-- clients
-    ================================================== -->
-    <div id="clients" class="section s-clients">
-
-        <div class="row narrower s-clients__top h-text-center">
-            <div class="column">
-                <h1 class="display-1" data-aos="fade-up">
-                    We've had the priveledge with working with
-                    some of the largest and most iconic brands
-                </h1>
-            </div>
-        </div> <!-- s-clients__top -->
-
-        <div class="row clients-outer">
-            <div class="column">
-                <div class="clients" data-aos="fade-up">
-
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/dropbox.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/atom.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/github.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/redhat.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/medium.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/messenger.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/steam.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/spotify.svg" /></a>
-
-                </div> <!-- end clients -->
-            </div> <!-- end column -->
-        </div> <!-- end clients-outer -->
-
-        <div class="row testimonials collapse">
-
+        <div class="row">
             <div class="column large-12">
+                <div class="s-timeline__grid">
+                    <div class="timeline-card" data-aos="fade-up">
+                        <h4>Build-Event</h4>
+                        <p>2&ndash;4 weeks, online. Workshops, challenges, and mentorship while
+                            teams design their bot and put together their CAD model and BOM.</p>
+                    </div>
+                    <div class="timeline-card" data-aos="fade-up">
+                        <h4>Pre-Event</h4>
+                        <p>1 week. Parts ship out, teams build their bot, and run their own
+                            tests before arriving at the venue.</p>
+                    </div>
+                    <div class="timeline-card" data-aos="fade-up">
+                        <h4>Main Event</h4>
+                        <p>2 days, offline. Qualifiers, battles, finals, and awards inside the
+                            Mechoria Arena.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <div class="testimonial-slider" data-aos="fade-up">
+    </section> <!-- end s-structure -->
 
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem.
-                            Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat
-                            fuga rem nihil nostrum.
-                            Laudantium quia consequatur molestias delectus culpa.
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Tim Cook</strong>
-                                <span>CEO, Apple</span>
-                            </cite>
+
+    <!-- categories
+    ================================================== -->
+    <section id="categories" class="s-categories target-section">
+
+        <div class="row">
+            <div class="column large-12">
+                <div class="section-title" data-num="03" data-aos="fade-up">
+                    <h3 class="h6">Weight Categories</h3>
+                </div>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <h1 class="display-1" data-aos="fade-up">
+                    Three classes. One arena. Pick your fight.
+                </h1>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <p class="lead" data-aos="fade-up">
+                    Every bot competes in one of three weight classes, each with its own build
+                    limit and grant support. Ship a proper 3D model and bill of materials for
+                    your bot and you qualify for a cash grant toward your build.
+                </p>
+            </div>
+        </div>
+
+        <div class="row s-categories__tabs" data-aos="fade-up">
+
+            <div class="s-categories__tab-nav">
+                <button type="button" class="s-categories__tab-btn is-active" data-tab="ant">AntWeight</button>
+                <button type="button" class="s-categories__tab-btn" data-tab="feather">FeatherWeight</button>
+                <button type="button" class="s-categories__tab-btn" data-tab="skibidi">SkibidiWeight</button>
+            </div>
+
+            <div class="s-categories__panel is-active" id="tab-ant">
+                <div class="category-card">
+                    <div class="category-card__image">
+                        <img src="images/categories/antweight-bot.jpg" alt="AntWeight example bot">
+                    </div>
+                    <div class="category-card__specs">
+                        <div class="spec-point">
+                            <span class="spec-arrow">&#8594;</span>
+                            <div>
+                                <strong>Weight limit</strong>
+                                <p>750g</p>
+                            </div>
                         </div>
-                    </div> <!-- end testimonials__slide -->
-
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas
-                            animi adipisci.
-                            Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                            Quasi voluptas eius distinctio. Atque eos maxime.
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Sundar Pichai</strong>
-                                <span>CEO, Google</span>
-                            </cite>
+                        <div class="spec-point">
+                            <span class="spec-arrow">&#8594;</span>
+                            <div>
+                                <strong>Grant</strong>
+                                <p>Up to &#8377;2,000 with an approved CAD model &amp; BOM</p>
+                            </div>
                         </div>
-                    </div> <!-- end testimonials__slide -->
-
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia
-                            nesciunt. Ducimus aut sed ipsam.
-                            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius
-                            distinctio.
-                            Voluptatem dignissimos ut.
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Satya Nadella</strong>
-                                <span>CEO, Microsoft</span>
-                            </cite>
+                        <div class="spec-point">
+                            <span class="spec-arrow">&#8594;</span>
+                            <div>
+                                <strong>Build window</strong>
+                                <p>2&ndash;4 weeks, ending with a 2-day live tournament</p>
+                            </div>
                         </div>
-                    </div> <!-- end testimonials__slide -->
+                    </div>
+                </div>
+            </div>
 
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac
-                            felis
-                            quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti
-                            expedita voluptas odit.
-                            Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Jeff Bezos</strong>
-                                <span>CEO, Amazon</span>
-                            </cite>
+            <div class="s-categories__panel" id="tab-feather">
+                <div class="category-card">
+                    <div class="category-card__image">
+                        <img src="images/categories/featherweight-bot.jpg" alt="FeatherWeight example bot">
+                    </div>
+                    <div class="category-card__specs">
+                        <div class="spec-point">
+                            <span class="spec-arrow">&#8594;</span>
+                            <div>
+                                <strong>Weight limit</strong>
+                                <p>2kg</p>
+                            </div>
                         </div>
-                    </div> <!-- end testimonials__slide -->
+                        <div class="spec-point">
+                            <span class="spec-arrow">&#8594;</span>
+                            <div>
+                                <strong>Grant</strong>
+                                <p>Up to &#8377;1,000 with an approved CAD model &amp; BOM</p>
+                            </div>
+                        </div>
+                        <div class="spec-point">
+                            <span class="spec-arrow">&#8594;</span>
+                            <div>
+                                <strong>Build window</strong>
+                                <p>2&ndash;4 weeks, ending with a 2-day live tournament</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                </div> <!-- end testimonial slider -->
+            <div class="s-categories__panel" id="tab-skibidi">
+                <div class="category-card">
+                    <div class="category-card__image">
+                        <img src="images/categories/skibidiweight-bot.jpg" alt="SkibidiWeight example bot">
+                    </div>
+                    <div class="category-card__specs">
+                        <div class="spec-point">
+                            <span class="spec-arrow">&#8594;</span>
+                            <div>
+                                <strong>Weight limit</strong>
+                                <p>3kg</p>
+                            </div>
+                        </div>
+                        <div class="spec-point">
+                            <span class="spec-arrow">&#8594;</span>
+                            <div>
+                                <strong>Grant</strong>
+                                <p>Up to &#8377;3,000 with an approved CAD model &amp; BOM</p>
+                            </div>
+                        </div>
+                        <div class="spec-point">
+                            <span class="spec-arrow">&#8594;</span>
+                            <div>
+                                <strong>Build window</strong>
+                                <p>2&ndash;4 weeks, ending with a 2-day live tournament</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            </div> <!-- end column -->
+            <p class="s-categories__note" data-aos="fade-up">
+                No grant, no problem &mdash; teams can also skip the grant and build with their
+                own parts. Note: bots that exceed their class weight limit are disqualified.
+            </p>
 
-        </div> <!-- end row -->
+        </div>
+
+        <div class="row">
+            <div class="column large-12">
+                <div class="s-grant-callout" data-aos="fade-up">
+                    <p><strong>How the grant works:</strong> to receive a grant, your team needs
+                        to properly ship the project &mdash; that means a 3D model and a bill of
+                        materials (BOM).</p>
+                    <p>This isn't just paperwork for its own sake: it means other teams (and
+                        future ones) can actually see how your bot was built, and maybe build on
+                        it themselves. You're always welcome to skip the 3D model and BOM and
+                        enter without a grant instead.</p>
+                </div>
+            </div>
+        </div>
+
+    </section> <!-- end s-categories -->
 
 
-    </div> <!-- end s-clients -->
+    <!-- sponsors
+    ================================================== -->
+    <section id="sponsors" class="s-sponsors">
+
+        <div class="row">
+            <div class="column large-12">
+                <div class="section-title" data-num="04" data-aos="fade-up">
+                    <h3 class="h6">Sponsors</h3>
+                </div>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <h1 class="display-1" data-aos="fade-up">
+                    A first-of-its-kind event needs backers who believe in it early
+                </h1>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <p class="lead" data-aos="fade-up">
+                    Mechoria is entirely student-run &mdash; we're currently in the 8th
+                    (semester) &mdash; and every partner helps us actually get this off the
+                    ground. Here's what sponsoring looks like from both sides.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column large-12">
+                <div class="s-benefits__cols">
+                    <div class="benefits-col" data-aos="fade-up">
+                        <h4>What Sponsors Get</h4>
+                        <ul>
+                            <li>Branding across posters, banners, the site, and the livestream</li>
+                            <li>Direct access to students, parents, and STEM communities</li>
+                            <li>Booth space during the main event</li>
+                            <li>Speaking or workshop opportunities</li>
+                            <li>Product showcases or API / hardware demos</li>
+                            <li>Naming rights for top-tier sponsors</li>
+                        </ul>
+                    </div>
+                    <div class="benefits-col" data-aos="fade-up">
+                        <h4>What We Receive</h4>
+                        <ul>
+                            <li>Funding for venue, materials, printing, prizes, logistics, and grants</li>
+                            <li>Prizes: cash, robotics kits, gadgets, vouchers</li>
+                            <li>Mentors, judges, and engineers for workshops</li>
+                            <li>Software credits, tools, or hardware</li>
+                            <li>Increased outreach and legitimacy for the event</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column large-12">
+                <div class="s-tiers__grid">
+
+                    <div class="tier-card" data-aos="fade-up">
+                        <div class="tier-card__name">Bronze</div>
+                        <div class="tier-card__price">&#8377;10,000</div>
+                        <ul>
+                            <li>Logo placement</li>
+                            <li>T-shirt branding</li>
+                            <li>Social media shoutout</li>
+                            <li>Swag inserts</li>
+                            <li>Stickers &amp; posters</li>
+                        </ul>
+                    </div>
+
+                    <div class="tier-card" data-aos="fade-up">
+                        <div class="tier-card__name">Silver</div>
+                        <div class="tier-card__price">&#8377;25,000</div>
+                        <ul>
+                            <li>Everything in Bronze</li>
+                            <li>Prominent logo placement</li>
+                            <li>Interactive sessions</li>
+                            <li>Group social posts</li>
+                            <li>Small prizes provided by sponsor</li>
+                        </ul>
+                    </div>
+
+                    <div class="tier-card" data-aos="fade-up">
+                        <div class="tier-card__name">Gold</div>
+                        <div class="tier-card__price">&#8377;50,000</div>
+                        <ul>
+                            <li>Everything in Silver</li>
+                            <li>Medium booth space</li>
+                            <li>Option to host a workshop</li>
+                            <li>Judge seat</li>
+                            <li>Dedicated session with attendees</li>
+                        </ul>
+                    </div>
+
+                    <div class="tier-card tier-card--platinum" data-aos="fade-up">
+                        <div class="tier-card__name">Platinum</div>
+                        <div class="tier-card__price">&#8377;100,000</div>
+                        <ul>
+                            <li>Everything in Gold</li>
+                            <li>Naming rights</li>
+                            <li>Keynote slot</li>
+                            <li>Biggest booth &amp; full branding</li>
+                            <li>Prizes provided from your company</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <p class="s-tiers__note" data-aos="fade-up">
+                    Every benefit in a lower tier carries up into the tiers above it. Custom
+                    packages are always open to discussion &mdash; just reach out.
+                </p>
+            </div>
+        </div>
+
+    </section> <!-- end s-sponsors -->
+
+
+    <!-- team
+    ================================================== -->
+    <section id="team" class="s-team">
+
+        <div class="row">
+            <div class="column large-12">
+                <div class="section-title" data-num="05" data-aos="fade-up">
+                    <h3 class="h6">Leads &amp; Co-Leads</h3>
+                </div>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <h1 class="display-1" data-aos="fade-up">
+                    The students behind Mechoria
+                </h1>
+            </div>
+            <div class="column large-6 w-900-stack">
+                <p class="lead" data-aos="fade-up">
+                    Four builders, hosts, and hackathon regulars putting this event together.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column large-12">
+                <div class="s-team__grid">
+
+                    <div class="team-card" data-aos="fade-up">
+                        <h4 class="team-card__name">Karna Amborkar</h4>
+                        <span class="team-card__role">Mechanical &amp; Hardware</span>
+                        <p class="team-card__bio">
+                            A maker and experimental builder who loves mixing hardware and
+                            software into functional, high-performance projects &mdash; including
+                            a custom-built 3D printer designed from scratch, a 5-axis 3D printer,
+                            a conveyor 3D printer, a drone, and a go-kart. Also dabbles in game
+                            dev and UI.
+                        </p>
+                        <div class="team-card__tags">
+                            <span>3D Mechanical Design</span>
+                            <span>Robotics &amp; Hardware</span>
+                            <span>CAD Modeling</span>
+                            <span>PCB Design</span>
+                        </div>
+                        <div class="team-card__links">
+                            <a href="https://github.com/Fastestkyo" target="_blank" rel="noopener">GitHub</a>
+                            <a href="mailto:fastestkyo@gmail.com">Email</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-aos="fade-up">
+                        <h4 class="team-card__name">Atharv Sharma</h4>
+                        <span class="team-card__role">Hardware &amp; Robotics</span>
+                        <p class="team-card__bio">
+                            A hands-on builder with a strong background in hardware and
+                            robotics &mdash; taking ideas from concept to working prototype, from
+                            a custom 3D printer to an FPV drone to a DIY VR headset, and
+                            currently developing an electric scooter. On the software side, he
+                            builds games.
+                        </p>
+                        <div class="team-card__tags">
+                            <span>Mechanical &amp; Electrical Design</span>
+                            <span>Robotics &amp; Drones</span>
+                            <span>VR Hardware</span>
+                            <span>Game Development</span>
+                        </div>
+                        <div class="team-card__links">
+                            <a href="https://github.com/scattercat-123/" target="_blank" rel="noopener">GitHub</a>
+                            <a href="mailto:replyatharv@gmail.com">Email</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-aos="fade-up">
+                        <h4 class="team-card__name">Shlok Kumar</h4>
+                        <span class="team-card__role">Hosting &amp; Strategy</span>
+                        <p class="team-card__bio">
+                            A storyteller, performer, and host who brings energy into everything
+                            from gaming to skits to live events, and stays calm and adaptable
+                            when things get intense. Builds games in Unreal Engine on the side.
+                        </p>
+                        <div class="team-card__tags">
+                            <span>Public Speaking</span>
+                            <span>Event Hosting</span>
+                            <span>Unreal Engine</span>
+                            <span>Gaming Strategy</span>
+                        </div>
+                        <div class="team-card__links">
+                            <a href="mailto:falconx31.777@gmail.com">Email</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-aos="fade-up">
+                        <h4 class="team-card__name">Mayukh Shankar Mishra</h4>
+                        <span class="team-card__role">Hosting &amp; Communications</span>
+                        <p class="team-card__bio">
+                            A creator who loves turning ideas into real projects, with public
+                            speaking as a core strength &mdash; confident leading discussions,
+                            presenting, and keeping a room engaged, whether it's a MUN, a pitch,
+                            or an event.
+                        </p>
+                        <div class="team-card__tags">
+                            <span>Public Speaking</span>
+                            <span>Skit Performance</span>
+                            <span>Team Coordination</span>
+                        </div>
+                        <div class="team-card__links">
+                            <a href="mailto:mayukhsmishra@gmail.com">Email</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section> <!-- end s-team -->
 
 
     <!-- contact
@@ -561,7 +581,7 @@
             <div class="column">
                 <h3 class="h6">Get In Touch</h3>
                 <h1 class="display-1">
-
+                    Let's build something worth battling for
                 </h1>
             </div>
         </div> <!-- s-footer__top -->
@@ -569,7 +589,7 @@
         <div class="row h-text-center">
             <div class="column">
                 <p class="s-contact__email">
-                    <a href="mailto:#0">team@mechoria.tech</a>
+                    <a href="mailto:team@mechoria.tech">team@mechoria.tech</a>
                 </p>
             </div>
         </div>
@@ -585,93 +605,50 @@
             <div class="column large-8 medium-12">
                 <div class="row">
                     <div class="column large-7 tab-12 s-footer__block">
-                        <h4 class="h6">Where to Find Us</h4>
+                        <h4 class="h6">Mechoria 2026</h4>
 
                         <p>
-                            1600 Amphitheatre Parkway <br>
-                            Mountain View, California <br>
-                            94043 US <br>
-                            <a href="tel:9113586722">+91 9113586722</a>
+                            Bengaluru, India <br>
+                            A student-hosted event <br>
+                            <a href="mailto:team@mechoria.tech">team@mechoria.tech</a>
                         </p>
                     </div>
 
                     <div class="column large-5 tab-12 s-footer__block">
-                        <h4 class="h6">Follow Us</h4 class="h6">
+                        <h4 class="h6">Explore</h4>
 
                         <ul class="s-footer__list">
-                            <li><a href="#0">Facebook</a></li>
-                            <li><a href="#0">Twitter</a></li>
-                            <li><a href="#0">Instagram</a></li>
-                            <li><a href="#0">Dribbble</a></li>
+                            <li><a class="smoothscroll" href="#about">About</a></li>
+                            <li><a class="smoothscroll" href="#categories">Categories</a></li>
+                            <li><a class="smoothscroll" href="#sponsors">Sponsors</a></li>
+                            <li><a class="smoothscroll" href="#team">Team</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="column large-4 medium-12 s-footer__block--end">
-                <a href="mailto:#0" class="btn h-full-width">Let's Talk</a>
+                <a href="mailto:team@mechoria.tech" class="btn h-full-width">Let's Talk</a>
 
                 <div class="ss-copyright">
-                    <span>Copyright mechoria @2026</span>
+                    <span>Copyright Mechoria &copy; 2026</span>
                 </div>
 
                 <div class="ss-go-top">
                     <a class="smoothscroll" title="Back to Top" href="#top">
-                        Back to Top ↑
+                        Back to Top &uarr;
                     </a>
                 </div> <!-- end ss-go-top -->
 
-            </div>
+            </div> <!-- end column -->
+
+        </div> <!-- end row -->
     </footer>
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
-                        title="Share"></button> <button class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
-                        title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div> <!-- end photoSwipe background -->
 
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
